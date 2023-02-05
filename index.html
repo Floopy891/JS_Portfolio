@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Head section with Meta tags and style links-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,26 +14,37 @@
     <title>SpyCraft Ciphers</title>
 </head>
 <!--Body section-->
+
 <body>
-<!--Main banner-->
+    <!--Main banner-->
     <main>
         <div class="banner">
             <h1>SpyCraft 101</h1>
             <h3>Keeping Secrets <em>secret</em></h3>
         </div>
-<!--Explanation for UI purposes-->
+        <!--Explanation for UI purposes-->
         <div class="explainer">
             <p>Hello, new initiate and welcome to your new career at Spy.Inc. <br>
                 Your first mission is simple: encode a message of your choosing into a nigh unbreakable cipher. <br> As
                 spies, we have to send messages regarding our intel but we have to remain vigilant and careful. <br>
-                Thankfully, our team of analysts created this nifty tool to scramble messages for us. <br> Just make sure the
+                Thankfully, our team of analysts created this nifty tool to scramble messages for us. <br> Just make
+                sure the
                 person you are sending to has a clue as to what cipher you are using!
                 <br> <br> Good luck, agent.
             </p>
         </div>
     </main>
-<!--Form submission area-->
-    <form>
+    <!--Form submission area-->
+    <form id="FORM1">
+        <script>
+            function ResetForm() {
+                document.getElementById("FORM1").reset();
+                document.getElementById("inmsg").innerHTML = "Form has been reset";
+            }
+            function SubmitForm() {
+                document.getElementById("FORM1").submit();
+            }
+        </script>
         <div class="msg-box">
             <label for="inmsg">Enter Message Here</label>
             <input type="textarea" name="inmsg" id="inmsg">
@@ -41,11 +53,11 @@
             <input type="submit" name="submit" id="submit">
         </div>
         <div class="output">
-            <label onsubmit="return encoder(this)" for="cipher">Coded message</label>
+            <label for="cipher">secret code: </label>
             <input type="textarea" name="cipher" id="cipher">
         </div>
     </form>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>

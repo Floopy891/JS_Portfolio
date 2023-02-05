@@ -1,11 +1,11 @@
 /* Global Stlye Reset */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* Body global style */
-body{
+body {
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
     color: #95ad18;
@@ -15,40 +15,40 @@ body{
     display: block;
 }
 
-h1{
+h1 {
     font-size: 8rem;
 }
 
-h3{
+h3 {
     font-size: 2.65rem;
 }
 
-em{
-    font-weight:400;
+em {
+    font-weight: 400;
     text-decoration: dashed underline;
 }
 
-p{
+p {
     text-align: left;
     padding: 5rem 25rem 5rem 40rem;
     font-size: 1.25rem;
 }
 
-.banner{
+.banner {
     display: flexbox;
     padding-top: 2rem;
     text-align: center;
 }
 
-.explainer{
+.explainer {
     max-width: inherit;
 }
 
-.submit-btn{
+.submit-btn {
     padding-top: 0.5rem;
 }
 
-.output{
+.output {
     padding-top: 1.5rem;
     padding-left: 1.37rem;
 }
