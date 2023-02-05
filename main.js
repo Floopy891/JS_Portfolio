@@ -1,6 +1,6 @@
 const form = document.forms[0];
 const input = document.getElementById('inmsg');
-const output = document.getElementById('cipher');
+const cipher = document.createElement('cipher');
 const alpha = Array.from(Array(26)).map((e, i) => i + 65);
 const alphabet = alpha.map((x) => String.fromCharCode(x));
 
@@ -25,3 +25,5 @@ const encoder = (input, caesar) => {
         return this.int2;
     }
 }
+
+encoder();
