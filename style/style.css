@@ -35,6 +35,7 @@ p{
 }
 
 .banner{
+    display: flexbox;
     padding-top: 2rem;
     text-align: center;
 }
@@ -45,4 +46,9 @@ p{
 
 .submit-btn{
     padding-top: 0.5rem;
+}
+
+.output{
+    padding-top: 1.5rem;
+    padding-left: 1.37rem;
 }

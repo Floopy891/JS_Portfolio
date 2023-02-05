@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>SpyCraft Ciphers</title>
 </head>
 <!--Body section-->
 <body>
@@ -35,10 +35,14 @@
     <form onsubmit="return setAction(this)">
         <div class="msg-box">
             <label for="inmsg">Enter Message Here</label>
-            <input type="text" name="inmsg" id="inmsg">
+            <input type="textarea" name="inmsg" id="inmsg">
         </div>
         <div class="submit-btn">
             <input type="submit" name="submit" id="submit">
+        </div>
+        <div class="output">
+            <label for="cipher">Coded message</label>
+            <input type="area" name="cipher" id="cipher">
         </div>
     </form>
     <script src="main.js"></script>
