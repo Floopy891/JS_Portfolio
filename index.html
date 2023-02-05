@@ -32,7 +32,7 @@
         </div>
     </main>
 <!--Form submission area-->
-    <form onsubmit="return encoder(this)">
+    <form>
         <div class="msg-box">
             <label for="inmsg">Enter Message Here</label>
             <input type="textarea" name="inmsg" id="inmsg">
@@ -41,8 +41,8 @@
             <input type="submit" name="submit" id="submit">
         </div>
         <div class="output">
-            <label for="cipher">Coded message</label>
-            <input type="area" name="cipher" id="cipher">
+            <label onsubmit="return encoder(this)" for="cipher">Coded message</label>
+            <input type="textarea" name="cipher" id="cipher">
         </div>
     </form>
     <script src="main.js"></script>

@@ -23,6 +23,3 @@ const encoder = (input) => {
     }
     return result;
 }
-
-
-encoder(inmsg);
