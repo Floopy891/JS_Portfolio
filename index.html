@@ -36,15 +36,6 @@
     </main>
     <!--Form submission area-->
     <form id="FORM1">
-        <script>
-            function ResetForm() {
-                document.getElementById("FORM1").reset();
-                document.getElementById("inmsg").innerHTML = "Form has been reset";
-            }
-            function SubmitForm() {
-                document.getElementById("FORM1").submit();
-            }
-        </script>
         <div class="msg-box">
             <label for="inmsg">Enter Message Here</label>
             <input type="textarea" name="inmsg" id="inmsg">
@@ -52,11 +43,24 @@
         <div class="submit-btn">
             <input type="submit" name="submit" id="submit">
         </div>
-        <div class="output">
-            <label for="cipher">secret code: </label>
-            <input type="textarea" name="cipher" id="cipher">
-        </div>
     </form>
+
+    <div id="result"></div>
+
+    <script>
+        const form = document.getElementById("form");
+        const resultDiv = document.getElementById("result");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const message = document.getElementById("message").value;
+            resultDiv.textContent = encoder(message);
+        });
+    </script>
+    <div class="output">
+        <label for="cipher">secret code: </label>
+        <input type="textarea" name="cipher" id="cipher">
+    </div>
     <script src="main.js" type="module"></script>
 </body>
 
