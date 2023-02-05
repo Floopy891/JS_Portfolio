@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Head section with Meta tags and style links-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,41 @@
     <link rel="stylesheet" href="style\style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+<!--Body section-->
 <body>
+<!--Main banner-->
     <main>
         <div class="banner">
             <h1>SpyCraft 101</h1>
             <h3>Keeping Secrets <em>secret</em></h3>
         </div>
+<!--Explanation for UI purposes-->
         <div class="explainer">
-            <p>Hello, new initiate and welcome to your new career at Spy.Inc. <br> 
-               Your first mission is simple: encode a message of your choosing into a nigh unbreakable cipher. As spies, we have to send messages regarding our intel but we have to remain vigilant and careful. Being caught is a literal and figurative death sentence (after capture, you will 'cease to exist' in any records). <br>
-               Thankfully, our team of analysts created this nifty tool to scramble messages for us. Just make sure the person you are sending to has a clue as to what cipher you are using!
-               <br> <br> Good luck, agent.</p>
+            <p>Hello, new initiate and welcome to your new career at Spy.Inc. <br>
+                Your first mission is simple: encode a message of your choosing into a nigh unbreakable cipher. As
+                spies, we have to send messages regarding our intel but we have to remain vigilant and careful. Being
+                caught is a literal and figurative death sentence (after capture, you will 'cease to exist' in any
+                records). <br>
+                Thankfully, our team of analysts created this nifty tool to scramble messages for us. Just make sure the
+                person you are sending to has a clue as to what cipher you are using!
+                <br> <br> Good luck, agent.
+            </p>
         </div>
     </main>
-    <form action="submit">
-        
+<!--Form submission area-->
+    <form onsubmit="return setAction(this)">
+        <div class="msg-box">
+            <label for="inmsg">Enter Message Here</label>
+            <input type="text" name="inmsg" id="inmsg">
+        </div>
+        <div class="submit-btn">
+            <input type="submit" name="submit" id="submit">
+        </div>
     </form>
 </body>
+
 </html>
