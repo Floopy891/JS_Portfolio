@@ -1,0 +1,14 @@
+/* Global Stlye Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body global style */
+body{
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    color: #95ad18;
+    background-color: #18285c;
+    text-shadow: black;
+}
