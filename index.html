@@ -45,21 +45,23 @@
         </div>
     </form>
 
-    <div id="result"></div>
-
-    <script>
-        const form = document.getElementById("form");
-        const resultDiv = document.getElementById("result");
-
-        form.addEventListener("submit", (event) => {
-            event.preventDefault();
-            const message = document.getElementById("message").value;
-            resultDiv.textContent = encoder(message);
-        });
-    </script>
-    <div class="output">
+    <div id="result">
         <label for="cipher">secret code: </label>
         <input type="textarea" name="cipher" id="cipher">
+        <script>
+            const form = document.getElementById("form");
+            const resultDiv = document.getElementById("result");
+
+            form.addEventListener("submit", (event) => {
+                event.preventDefault();
+                const message = document.getElementById("message").value;
+                resultDiv.textContent = encoder(message);
+            });
+        </script>
+
+    </div>
+    <div class="output">
+
     </div>
     <script src="main.js" type="module"></script>
 </body>
